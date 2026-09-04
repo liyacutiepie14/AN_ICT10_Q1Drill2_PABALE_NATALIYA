@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Numbers and forms</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+    body {
+        background-color: #fdf6e3; 
+        font-family: "Lobster", cursive;
+        color: #4a4a4a;
+    }
+    h1 {
+        color: #4a90a4;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #inputs, #output {
+        text-align: center;
+        background-color: #cfe8f3; 
+        border-radius: 25px;
+        padding: 16px 24px;
+        max-width: 750px;
+        margin: auto;
+        color: #4a4a4a;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Simply Calculator</h1>
+
+<div id="inputs">
+
+    <label for="input1">First Number:</label>
+    <input type="text" id="input1" placeholder="Enter a value">
+
+    <br><br>
+
+    <label for="input2">Second Number:</label>
+    <input type="text" id="input2" placeholder="Enter a value">
+
+    <br><br>
+
+    <label for="operations">Operation:</label>
+    <select id="operations">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+    </select>
+
+    <br><br>
+
+    <button py-click="compute">Compute</button>
+
+</div>
+
+<br><br>
+
+<div id="output">
+Result will appear here.
+</div>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
